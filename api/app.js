@@ -5,6 +5,8 @@ import userRoute from './routes/user.route.js';
 
 const app = express();
 
+app.use(express.json());
+
 app.use('/api/posts', postRoute);
 app.use('/api/auth', authRoute);
 app.use('/api/users', userRoute);
